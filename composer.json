@@ -1,0 +1,40 @@
+{
+    "name": "romeoz/rock-access",
+    "description": "[READ ONLY] Access module for Rock Framework",
+    "keywords": ["access"],
+    "type": "library",
+    "license": "MIT",
+    "support": {
+        "email": "serggalka@gmail.com",
+        "issues": "https://github.com/romeOz/rock-access/issues",
+        "source": "https://github.com/romeOz/rock-access"
+    },
+    "authors": [
+        {
+            "name": "Ruslan",
+            "email": "serggalka@gmail.com"
+        }
+    ],
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/romeOz/rock-base"
+    }],
+    "require": {
+        "php": ">=5.4.0",
+        "romeoz/rock-base" : "*@dev",
+        "romeoz/rock-helpers" : "*@dev"
+    },
+    "require-dev": {
+        "romeoz/rock-request": "*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "rock\\access\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
