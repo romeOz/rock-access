@@ -1,6 +1,6 @@
 {
     "name": "romeoz/rock-access",
-    "description": "[READ ONLY] Access module for Rock Framework",
+    "description": "Access module for Rock Framework",
     "keywords": ["access"],
     "type": "library",
     "license": "MIT",
@@ -15,17 +15,12 @@
             "email": "serggalka@gmail.com"
         }
     ],
-    "repositories": [{
-        "type": "vcs",
-        "url": "https://github.com/romeOz/rock-base"
-    }],
     "require": {
         "php": ">=5.4.0",
-        "romeoz/rock-base" : "*@dev",
-        "romeoz/rock-helpers" : "*@dev"
+        "romeoz/rock-base" : "0.10.*"
     },
     "require-dev": {
-        "romeoz/rock-request": "*@dev"
+        "romeoz/rock-request": "0.10.*"
     },
     "autoload": {
         "psr-4": {
@@ -34,7 +29,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "0.10-dev"
         }
     }
 }
