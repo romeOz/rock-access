@@ -3,7 +3,7 @@
 namespace rock\access;
 
 
-interface ErrorsInterface 
+interface ErrorsInterface
 {
     const E_VERBS = 1;
     const E_IPS = 2;
@@ -13,10 +13,16 @@ interface ErrorsInterface
     const E_NOT_FOUND = 32;
 
     public function isErrorVerbs();
+
     public function isErrorUsers();
+
     public function isErrorRoles();
+
     public function isErrorIps();
+
     public function isErrorCustom();
+
     public function isErrorNotFound();
+
     public function getErrors();
 } 

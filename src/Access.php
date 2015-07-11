@@ -40,8 +40,8 @@ class Access implements ErrorsInterface, ObjectInterface
     public function init()
     {
         $this->request = Instance::ensure($this->request, '\rock\request\Request');
-        $this->response = Instance::ensure($this->response, '\rock\response\Response', false);
-        $this->user = Instance::ensure($this->user, '\rock\user\user', false);
+        $this->response = Instance::ensure($this->response, '\rock\response\Response', [], false);
+        $this->user = Instance::ensure($this->user, '\rock\user\user', [], false);
     }
 
     /**
@@ -117,8 +117,8 @@ class Access implements ErrorsInterface, ObjectInterface
      * Init error
      *
      * @param bool $value
-     * @param int  $error
-     * @param bool     $allow
+     * @param int $error
+     * @param bool $allow
      * @return bool
      */
     protected function initError($value, $error, $allow)

@@ -19,9 +19,6 @@
         "php": ">=5.4.0",
         "romeoz/rock-base" : "0.10.*"
     },
-    "require-dev": {
-        "romeoz/rock-request": "0.10.*"
-    },
     "autoload": {
         "psr-4": {
             "rock\\access\\": "src/"

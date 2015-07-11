@@ -3,7 +3,7 @@
 namespace rock\access;
 
 
-trait ErrorsTrait 
+trait ErrorsTrait
 {
     public function isErrorVerbs()
     {
@@ -14,10 +14,12 @@ trait ErrorsTrait
     {
         return (bool)(self::E_USERS & $this->errors);
     }
+
     public function isErrorRoles()
     {
         return (bool)(self::E_ROLES & $this->errors);
     }
+
     public function isErrorIps()
     {
         return (bool)(self::E_IPS & $this->errors);
