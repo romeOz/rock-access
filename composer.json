@@ -1,6 +1,6 @@
 {
     "name": "romeoz/rock-access",
-    "description": "Access module for Rock Framework",
+    "description": "[READ ONLY] Access module for Rock Framework",
     "keywords": ["access"],
     "type": "library",
     "license": "MIT",
@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "romeoz/rock-base" : "0.10.*"
+        "romeoz/rock-base" : "0.11.*"
     },
     "autoload": {
         "psr-4": {
